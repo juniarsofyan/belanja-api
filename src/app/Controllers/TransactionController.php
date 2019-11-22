@@ -117,7 +117,7 @@ class TransactionController
                         ) VALUE (
                             :tgl_transaksi,
                             :nomor_transaksi,
-                            (SELECT id FROM cn_customer WHERE email = :customer_email),
+                            :customer_id,
                             :nama,
                             :metode_pengiriman,
                             :kurir,
@@ -138,7 +138,7 @@ class TransactionController
         $data = [
             ":tgl_transaksi"       => date('Y-m-d'),
             ":nomor_transaksi"     => $transaction["transaction_number"],
-            ":customer_email"         => $transaction["customer_email"],
+            ":customer_id"         => $transaction["customer_id"],
             ":nama"                => $transaction["customer_name"],
             ":metode_pengiriman"   => $transaction["shipping_method"],
             ":kurir"               => $transaction["courier"],

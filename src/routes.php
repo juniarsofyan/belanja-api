@@ -16,6 +16,10 @@ use Slim\Http\Response;
 $app->get("/send", 'AuthController:send');
 $app->get("/expired", 'TransactionController:deletekExpiredOrders');
 
+$app->group('/affiliation', function () use ($app) {
+    $app->post("/check", 'AffiliationController:check');
+});
+
 $app->group('/auth', function () use ($app) {
     $app->post("/login", 'AuthController:login');
     $app->post("/logout", 'AuthController:logout');

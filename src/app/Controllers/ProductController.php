@@ -31,8 +31,8 @@ class ProductController
                     brg.kode_barang, 
                     brg.nama, 
                     brg.berat, 
-                    brg.h_nomem AS harga, 
-                    IFNULL(brg.h_nomem - (brg.h_nomem * (brg.diskon / 100)), 0) AS harga_diskon,
+                    brg.h_member AS harga, 
+                    IFNULL(brg.h_member - (brg.h_member * (brg.diskon / 100)), 0) AS harga_diskon,
                     IFNULL(brg.diskon, 0) as diskon,
                     brg.pic,
                     tipe_kulit,
@@ -45,7 +45,7 @@ class ProductController
                         FROM cn_barang
                         WHERE kode_barang BETWEEN 'SK005' AND 'SK024'
                     )
-                    AND brg.h_nomem > 0
+                    AND brg.h_member > 0
                     AND brg.cat = 0
                     AND {$where_clause} = :category
                     LIMIT :limit OFFSET :offset";
@@ -68,7 +68,11 @@ class ProductController
     // public function countProducts(Request $request, Response $response, array $args)
     public function countProducts($category)
     {
-        // $category = $args["category"];
+        $where_clause = "jenis";
+
+        if ($category == "SERIES" || $category == "series") {
+            $where_clause = "unit";
+        }
 
         $sql = "SELECT 
                     COUNT(brg.kode_barang) as rowcount
@@ -81,7 +85,7 @@ class ProductController
                     )
                     AND brg.h_nomem > 0
                     AND brg.cat = 0
-                    AND jenis = :category";
+                    AND {$where_clause} = :category";
 
         $stmt = $this->db->prepare($sql);
         $stmt->bindValue(':category', $category, \PDO::PARAM_STR);
@@ -134,11 +138,11 @@ class ProductController
                             )
                     ) a
                 WHERE
-                    a.kode_barang LIKE :keyword
+                    a.cat = 0
+                    AND a.kode_barang LIKE :keyword
                     OR a.nama LIKE :keyword
                     OR a.jenis LIKE :keyword
                     AND a.harga > 0
-                    AND a.cat = 0
                 ORDER BY
                     a.nama ASC";
 
