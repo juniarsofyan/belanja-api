@@ -73,7 +73,7 @@
 														<?=$branch?>
 													</td>
 												</tr>
-												<tr>
+												<!-- <tr>
 													<td width="120" valign="top"
 														style="padding: 10px 0 10px 0;color: #153643; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px;">
 														DROPSHIPPER
@@ -82,7 +82,7 @@
 														style="padding: 10px 0 10px 0;color: #153643; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px;">
 														<?=$user['name']?> - <?=$user['phone']?>
 													</td>
-												</tr>
+												</tr> -->
 												<tr>
 													<td width="120" valign="top"
 														style="padding: 10px 0 10px 0;color: #153643; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px;">

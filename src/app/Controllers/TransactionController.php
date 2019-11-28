@@ -46,10 +46,10 @@ class TransactionController
                     $substract_sales_branch_qty = $this->substractSalesBranchQty($transaction['cart'], $transaction['sales_branch_code']);
 
                     if ($substract_sales_branch_qty) {
-
+                        // GET DATA FOR EMAIL 
                         $branch = $this->findBranch($transaction['sales_branch_code']);
-                        $profile = $this->findProfile($transaction['customer_email']);
-                        $shipping_address = $this->findShippingAddress($transaction['customer_email']);
+                        $profile = $this->findProfile($transaction['user_email']);
+                        $shipping_address = $this->findShippingAddress($transaction['user_email']);
                         $items = $this->findItems($transaction['transaction_number'], $transaction['cart']);
                         $bank = $this->findBank($transaction['bank']);
 
@@ -57,10 +57,10 @@ class TransactionController
                             "email" => array(
                                 "template" => "order-confirmed.php",
                                 "subject" => "Transaction Activity",
-                                "recipient" => $transaction['customer_email']
+                                "recipient" => $transaction['user_email']
                             ),
                             "params" => array (
-                                "name" => $transaction['customer_name'],
+                                "name" => $transaction['user_name'],
                                 "transaction_date" => $this->getLocalDateFormat(date('Y-m-d'), true),
                                 "transaction_number" => $transaction['transaction_number'],
                                 "bank" => $bank,
@@ -139,7 +139,7 @@ class TransactionController
             ":tgl_transaksi"       => date('Y-m-d'),
             ":nomor_transaksi"     => $transaction["transaction_number"],
             ":customer_id"         => $transaction["customer_id"],
-            ":nama"                => $transaction["customer_name"],
+            ":nama"                => $transaction["user_name"],
             ":metode_pengiriman"   => $transaction["shipping_method"],
             ":kurir"               => $transaction["courier"],
             ":shipping_address_id" => (int) $transaction["shipping_address_id"],
@@ -921,9 +921,9 @@ class TransactionController
     public function sendEmail(Request $request, Response $response, $data)
     {
         $mailer = $this->mailer;
-        // $content = $this->renderer->render($response, "order-confirmed.php", array("name" => "IRUL"));
+        // $content = $this->renderer->fetch($response, "order-confirmed.php", array("name" => "IRUL"));
         // $send_email = $mailer->sendEmail("choerulsofyanmf@gmail.com", "Activate Account", $content);
-        $mail_content = $this->renderer->render($response, $data["email"]["template"], $data["params"]);
+        $mail_content = $this->renderer->fetch($data["email"]["template"], $data["params"]);
         $send_email = $mailer->sendEmail($data["email"]["recipient"], $data["email"]["subject"], $mail_content);
 
         if ($send_email) {
