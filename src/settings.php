@@ -16,6 +16,10 @@ return [
             'level' => \Monolog\Logger::DEBUG,
         ],
 
+        'environment' => [
+            'app_url' => 'http://localhost:3000/'
+        ],
+
         // Database Settings
         'db' => [
             'host' => 'localhost',
