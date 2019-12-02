@@ -50,9 +50,9 @@ return [
         'mailer' => [
             'username' => "affiliation@bellezkin.com",
             'password' => "bersamabellezkin",
-            'display_name' => "Bellezkin Affiliation",
+            'display_name' => "noreply@bellezkin.com",
             'display_email' => "affiliation@bellezkin.com",
-            'reply_name' => "Bellezkin No Reply",
+            'reply_name' => "noreply@bellezkin.com",
             'reply_email' => "affiliation@bellezkin.com"
         ],
 

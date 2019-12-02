@@ -394,6 +394,7 @@ class TransactionController
                         "recipient" => $customer['email']
                     ),
                     "params" => array (
+                        "app_url" => $this->environment['app_url'],
                         "name" => ucwords(strtolower($customer['nama'])),
                         "confirm_payment_date" => $date,
                         "transaction_number" => $transaction_number,
@@ -720,6 +721,27 @@ class TransactionController
 
             $this->db->commit();
 
+            $x = $this->findCustomer($transaction_id);
+
+            var_dump($x);
+            exit();
+
+            $data = array(
+                "email" => array(
+                    "template" => "order-cancelled.php",
+                    "subject" => "Transaction Activity",
+                    "recipient" => $customer['email']
+                ),
+                "params" => array (
+                    "app_url" => $this->environment['app_url'],
+                    "name" => ucwords(strtolower($customer['nama'])),
+                    "order_cancellation_date" => $date,
+                    "transaction_number" => $transaction_number
+                )
+            );
+
+            $this->sendEmail($request, $response, $data);
+
             return $response->withJson(["status" => "success", "data" => "1"], 200);
         } catch (Exception $e) {
 
@@ -924,8 +946,6 @@ class TransactionController
     public function sendEmail(Request $request, Response $response, $data)
     {
         $mailer = $this->mailer;
-        // $content = $this->renderer->fetch($response, "order-confirmed.php", array("name" => "IRUL"));
-        // $send_email = $mailer->sendEmail("choerulsofyanmf@gmail.com", "Activate Account", $content);
         $mail_content = $this->renderer->fetch($data["email"]["template"], $data["params"]);
         $send_email = $mailer->sendEmail($data["email"]["recipient"], $data["email"]["subject"], $mail_content);
 
@@ -1127,7 +1147,7 @@ class TransactionController
                 $sql_get_id_transaksi = "SELECT tr.customer_id, cr.nama, tr.nomor_transaksi 
                                         FROM cn_transaksi tr
                                         INNER JOIN cn_customer cr
-                                        ON tr.customer_id = cr.id
+                                            ON tr.customer_id = cr.id
                                         WHERE tr.id IN (
                                             SELECT *
                                             FROM (
@@ -1158,6 +1178,7 @@ class TransactionController
                                 "recipient" => $customer['email']
                             ),
                             "params" => array (
+                                "app_url" => $this->environment['app_url'],
                                 "name" => ucwords(strtolower($customer['nama'])),
                                 "order_cancellation_date" => $date,
                                 "transaction_number" => $transaction_number

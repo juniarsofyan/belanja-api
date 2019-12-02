@@ -874,10 +874,14 @@ class PromoController
                         $date_period_start = strtotime($date_period[0]);
                         $date_period_end = strtotime($date_period[1]);
 
+                        $date_range = explode(" - ", $promo->date_range);
+                        $date_range_start = strtotime($date_range[0]);
+                        $date_range_end = strtotime($date_range[1]);
+
                         // IF PROMO PERIOD HAS NOT EXPIRED
                         if ($current_date >= $date_period_start && $current_date <= $date_period_end) {
 
-                            if (!$this->isFirstTransaction($args['no_member'])) {
+                            if (!$this->isFirstTransaction($args['no_member'], $args['customer_id'], $date_range_start, $date_range_end)) {
                                 // if ($this->hasTransactionAlready($args['no_member'])) {
                                 $data = array(
                                     "minimum_purchase" => $promo->minimum_purchase,
@@ -893,22 +897,28 @@ class PromoController
         return $response->withJson(["status" => "success", "data" => $data], 200);
     }
 
-    public function isFirstTransaction($no_member)
+    public function isFirstTransaction($no_member, $customer_id, $date_range_start, $join_date_range_end)
     {
         $sql = "SELECT kode_barang
                 FROM cn_transaksi_detail a
                 INNER JOIN cn_transaksi b ON a.transaksi_id = b.id
-                WHERE b.customer_id IN (
-                    SELECT no_member
-                    FROM tb_member
-                    WHERE no_member= :no_member
-                    AND tanggal BETWEEN '2013-08-16'AND '2019-08-31'
+                WHERE b.member_id = :no_member 
+                AND b.customer_id IN (
+                    SELECT id
+                    FROM cn_customer
+                    WHERE id = :customer_id
+                    AND tanggal_registrasi BETWEEN :date_range_start AND :date_range_end
                 )
                 AND a.kode_barang='90099'";
 
         $stmt = $this->db->prepare($sql);
 
-        $data = [":no_member" => $no_member];
+        $data = [
+            ":no_member" => $no_member,
+            ":customer_id" => $customer_id,
+            ":date_range_start" => $date_range_start,
+            ":date_range_end" => $date_range_end
+        ];
 
         $stmt->execute($data);
 
