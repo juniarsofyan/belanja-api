@@ -55,11 +55,6 @@ class TransactionController
                         $items = $this->findItems($transaction['transaction_number'], $transaction['cart']);
                         $bank = $this->findBank($transaction['bank']);
 
-                        echo "<pre>";
-                        print_r($profile);
-                        echo "</pre>";
-                        exit();
-
                         $data = array(
                             "email" => array(
                                 "template" => "order-confirmed.php",
