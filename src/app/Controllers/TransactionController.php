@@ -115,6 +115,7 @@ class TransactionController
                             total_berat,
                             note,
                             kode_spb,
+                            kode_aff,
                             jenis_platform,
                             bank,
                             status_transaksi
@@ -133,6 +134,7 @@ class TransactionController
                             :total_berat,
                             :note,
                             :kode_spb,
+                            :kode_aff,
                             :jenis_platform,
                             :bank,
                             :status_transaksi
@@ -155,6 +157,7 @@ class TransactionController
             ":total_berat"         => $transaction["total_weight"],
             ":note"                => $transaction["note"] ? $transaction["note"] : "",
             ":kode_spb"            => $transaction["sales_branch_code"] ? $transaction["sales_branch_code"] : "",
+            ":kode_aff"            => $transaction["affiliation_code"] ? $transaction["affiliation_code"] : "",
             ":jenis_platform"      => $transaction["shopping_platform"],
             ":bank"                => $transaction["bank"],
             ":status_transaksi"    => "PLACE ORDER",
