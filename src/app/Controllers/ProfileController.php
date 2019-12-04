@@ -66,7 +66,7 @@ class ProfileController
             $result = $stmt->fetch();
 
             if ($result['kode_aff'] == "") {
-                $this->validateAffiliationCode($user['affiliation_code'], $result['email']);
+                $this->validateAffiliationCode($user['affiliation']['code'], $result['email']);
             }
 
             return $response->withJson(["status" => "success", "data" => $result], 200);
