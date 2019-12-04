@@ -55,6 +55,11 @@ class TransactionController
                         $items = $this->findItems($transaction['transaction_number'], $transaction['cart']);
                         $bank = $this->findBank($transaction['bank']);
 
+                        echo "<pre>";
+                        print_r($profile);
+                        echo "</pre>";
+                        exit();
+
                         $data = array(
                             "email" => array(
                                 "template" => "order-confirmed.php",
@@ -63,7 +68,7 @@ class TransactionController
                             ),
                             "params" => array (
                                 "app_url" => $this->environment['app_url'],
-                                "name" => $profile['name'],
+                                "name" => $profile['nama'],
                                 "transaction_date" => $this->getLocalDateFormat(date('Y-m-d'), true),
                                 "transaction_number" => $transaction['transaction_number'],
                                 "bank" => $bank,
