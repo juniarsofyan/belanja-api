@@ -103,6 +103,7 @@ class TransactionController
         $sql = "INSERT INTO cn_transaksi (
                             tgl_transaksi,
                             nomor_transaksi,
+                            member_id,
                             customer_id,
                             nama,
                             metode_pengiriman,
@@ -120,6 +121,7 @@ class TransactionController
                         ) VALUE (
                             :tgl_transaksi,
                             :nomor_transaksi,
+                            :member_id,
                             :customer_id,
                             :nama,
                             :metode_pengiriman,
@@ -141,8 +143,9 @@ class TransactionController
         $data = [
             ":tgl_transaksi"       => date('Y-m-d'),
             ":nomor_transaksi"     => $transaction["transaction_number"],
+            ":member_id"           => $transaction["member_id"],
             ":customer_id"         => $transaction["customer_id"],
-            ":nama"                => $transaction["user_name"],
+            ":nama"                => $transaction["customer_name"],
             ":metode_pengiriman"   => $transaction["shipping_method"],
             ":kurir"               => $transaction["courier"],
             ":shipping_address_id" => (int) $transaction["shipping_address_id"],

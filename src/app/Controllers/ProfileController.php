@@ -37,8 +37,12 @@ class ProfileController
         ];
 
         if ($stmt->execute($data)) {
-            // $last_insert_id = $this->db->lastInsertId();
-            return $response->withJson(["status" => "success", "data" => "1"], 200);
+
+            $data = array(
+                "user_id" => $this->db->lastInsertId()
+            );
+
+            return $response->withJson(["status" => "success", "data" => $data], 200);
         }
 
         return $response->withJson(["status" => "failed", "data" => "0"], 200);
@@ -48,7 +52,7 @@ class ProfileController
     {
         $user = $request->getParsedBody();
 
-        $sql = "SELECT nik, nama, tgl_lahir, telepon, email, kode_aff 
+        $sql = "SELECT id AS user_id, nik, nama, tgl_lahir, telepon, email, kode_aff 
                 FROM cn_customer 
                 WHERE email=:email";
 
