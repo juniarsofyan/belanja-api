@@ -17,7 +17,8 @@ return [
         ],
 
         'environment' => [
-            'app_url' => 'http://localhost:3000/'
+            // 'app_url' => 'http://localhost:3000/'
+            'app_url' => 'http://belanja-dev.bellezkin.com/'
         ],
 
         // Database Settings
