@@ -737,12 +737,12 @@ class TransactionController
 
             $this->db->commit();
 
-            $x = $this->findCustomer($transaction_id);
+            // $x = $this->findCustomer($transaction_id);
 
-            var_dump($x);
-            exit();
+            // var_dump($x);
+            // exit();
 
-            $data = array(
+            /* $data = array(
                 "email" => array(
                     "template" => "order-cancelled.php",
                     "subject" => "Transaction Activity",
@@ -754,9 +754,9 @@ class TransactionController
                     "order_cancellation_date" => $date,
                     "transaction_number" => $transaction_number
                 )
-            );
+            ); */
 
-            $this->sendEmail($request, $response, $data);
+            // $this->sendEmail($request, $response, $data);
 
             return $response->withJson(["status" => "success", "data" => "1"], 200);
         } catch (Exception $e) {

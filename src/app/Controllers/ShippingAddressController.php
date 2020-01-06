@@ -25,9 +25,7 @@ class ShippingAddressController
                     sa.kecamatan_id, sa.kecamatan_nama, 
                     sa.alamat, sa.kode_pos, sa.is_default
                 FROM cn_shipping_address sa
-                INNER JOIN cn_customer cs
-                ON sa.customer_id = cs.id
-                WHERE cs.email=:email";
+                WHERE customer_id IN (SELECT id FROM cn_customer WHERE email = :email) LIMIT 1";
 
         $stmt = $this->db->prepare($sql);
 
@@ -55,10 +53,7 @@ class ShippingAddressController
                     sa.kecamatan_id, sa.kecamatan_nama, 
                     sa.alamat, sa.kode_pos, sa.is_default
                 FROM cn_shipping_address sa
-                INNER JOIN cn_customer cs
-                ON sa.customer_id = cs.id
-                WHERE cs.email=:email
-                LIMIT 1";
+                WHERE customer_id IN (SELECT id FROM cn_customer WHERE email = :email) AND is_default = 1 LIMIT 1";
 
             // AND sa.is_default = 1
 
@@ -86,8 +81,6 @@ class ShippingAddressController
                     sa.kecamatan_id, sa.kecamatan_nama, 
                     sa.alamat, sa.kode_pos, sa.is_default
                 FROM cn_shipping_address sa
-                INNER JOIN cn_customer cs
-                ON sa.customer_id = cs.id
                 WHERE sa.id=:id";
 
         $stmt = $this->db->prepare($sql);
@@ -220,15 +213,17 @@ class ShippingAddressController
         return $response->withJson(["status" => "failed", "data" => "0"], 200);
     }
 
-    public function setDefault(Request $request, Response $response, array $args)
+    public function setDefault(Request $request, Response $response)
     {
+        $shipping_address = $request->getParsedBody();
+
         $sql1 = "UPDATE cn_shipping_address 
                 SET is_default=0
                 WHERE id NOT IN(:id)";
 
         $stmt1 = $this->db->prepare($sql1);
 
-        $params1 = [":id" => $args['id']];
+        $params1 = [":id" => $shipping_address['id']];
 
         if ($stmt1->execute($params1)) {
 
@@ -238,7 +233,7 @@ class ShippingAddressController
 
             $stmt2 = $this->db->prepare($sql2);
 
-            $params2 = [":id" => $args['id']];
+            $params2 = [":id" => $shipping_address['id']];
 
             if ($stmt2->execute($params2)) {
                 return $response->withJson(["status" => "success", "data" => "1"], 200);

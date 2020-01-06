@@ -54,13 +54,13 @@ $app->group('/profile', function () use ($app) {
 
 $app->group('/shipping-address', function () use ($app) {
     // $app->get("/get/{token}", 'ShippingAddressController:get');
-    $app->post("/get", 'ShippingAddressController:get');
+    $app->post("/all", 'ShippingAddressController:get');
     $app->post("/current", 'ShippingAddressController:current');
-    $app->get("/detail/{id}", 'ShippingAddressController:detail');
+    $app->get("/{id}/detail", 'ShippingAddressController:detail');
     $app->post("/add", 'ShippingAddressController:add');
     $app->post("/{id}/update", 'ShippingAddressController:update');
     $app->get("/delete/{id}", 'ShippingAddressController:delete');
-    $app->get("/set-default/{id}", 'ShippingAddressController:setDefault');
+    $app->post("/set-default", 'ShippingAddressController:setDefault');
 });
 
 $app->group('/cart', function () use ($app) {
