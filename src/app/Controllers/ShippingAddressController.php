@@ -25,7 +25,7 @@ class ShippingAddressController
                     sa.kecamatan_id, sa.kecamatan_nama, 
                     sa.alamat, sa.kode_pos, sa.is_default
                 FROM cn_shipping_address sa
-                WHERE customer_id IN (SELECT id FROM cn_customer WHERE email = :email) LIMIT 1";
+                WHERE customer_id IN (SELECT id FROM cn_customer WHERE email = :email)";
 
         $stmt = $this->db->prepare($sql);
 
