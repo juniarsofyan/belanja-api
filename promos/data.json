@@ -2,538 +2,266 @@
     "rules": [
         {
             "promo_type": "REGULAR",
-            "period": "2020-04-01 - 2020-04-15",
+            "period": "2020-05-01 - 2020-05-15",
             "kode_barang": "88001",
             "h_member": 440000,
-            "diskon": 25,
-            "harga_diskon": 330000,
-            "promo_caption": "PROMO APRIL | 25% OFF"
+            "diskon": 15,
+            "harga_diskon": 374000,
+            "promo_caption": "PROMO MAY | 15% OFF"
         },
         {
             "promo_type": "REGULAR",
-            "period": "2020-04-01 - 2020-04-15",
+            "period": "2020-05-01 - 2020-05-15",
             "kode_barang": "88002",
             "h_member": 440000,
             "diskon": 20,
             "harga_diskon": 352000,
-            "promo_caption": "PROMO APRIL | 20% OFF"
+            "promo_caption": "PROMO MAY | 20% OFF"
         },
         {
             "promo_type": "REGULAR",
-            "period": "2020-04-01 - 2020-04-15",
+            "period": "2020-05-01 - 2020-05-15",
             "kode_barang": "88003",
             "h_member": 440000,
             "diskon": 20,
             "harga_diskon": 352000,
-            "promo_caption": "PROMO APRIL | 20% OFF"
+            "promo_caption": "PROMO MAY | 20% OFF"
         },
         {
             "promo_type": "REGULAR",
-            "period": "2020-04-01 - 2020-04-15",
+            "period": "2020-05-01 - 2020-05-15",
             "kode_barang": "88015",
             "h_member": 428000,
-            "diskon": 20,
-            "harga_diskon": 343000,
-            "promo_caption": "PROMO APRIL | 20% OFF"
+            "diskon": 15,
+            "harga_diskon": 364000,
+            "promo_caption": "PROMO MAY | 15% OFF"
         },
         {
             "promo_type": "REGULAR",
-            "period": "2020-04-01 - 2020-04-15",
+            "period": "2020-05-01 - 2020-05-15",
             "kode_barang": "88016",
             "h_member": 428000,
-            "diskon": 25,
-            "harga_diskon": 321000,
-            "promo_caption": "PROMO APRIL | 25% OFF"
+            "diskon": 10,
+            "harga_diskon": 386000,
+            "promo_caption": "PROMO MAY | 10% OFF"
         },
         {
             "promo_type": "REGULAR",
-            "period": "2020-04-01 - 2020-04-15",
+            "period": "2020-05-01 - 2020-05-15",
             "kode_barang": "88018",
             "h_member": 428000,
-            "diskon": 15,
-            "harga_diskon": 364000,
-            "promo_caption": "PROMO APRIL | 15% OFF"
+            "diskon": 10,
+            "harga_diskon": 386000,
+            "promo_caption": "PROMO MAY | 10% OFF"
         },
         {
             "promo_type": "REGULAR",
-            "period": "2020-04-01 - 2020-04-15",
+            "period": "2020-05-01 - 2020-05-15",
             "kode_barang": "88019",
             "h_member": 428000,
-            "diskon": 15,
-            "harga_diskon": 364000,
-            "promo_caption": "PROMO APRIL | 15% OFF"
+            "diskon": 10,
+            "harga_diskon": 386000,
+            "promo_caption": "PROMO MAY | 10% OFF"
         },
         {
             "promo_type": "REGULAR",
-            "period": "2020-04-01 - 2020-04-15",
+            "period": "2020-05-01 - 2020-05-15",
             "kode_barang": "88065",
             "h_member": 440000,
-            "diskon": 25,
-            "harga_diskon": 330000,
-            "promo_caption": "PROMO APRIL | 25% OFF"
+            "diskon": 15,
+            "harga_diskon": 374000,
+            "promo_caption": "PROMO MAY | 15% OFF"
         },
         {
             "promo_type": "REGULAR",
-            "period": "2020-04-01 - 2020-04-15",
+            "period": "2020-05-01 - 2020-05-15",
             "kode_barang": "88073",
             "h_member": 440000,
-            "diskon": 25,
-            "harga_diskon": 330000,
-            "promo_caption": "PROMO APRIL | 25% OFF"
+            "diskon": 15,
+            "harga_diskon": 374000,
+            "promo_caption": "PROMO MAY | 15% OFF"
         },
         {
             "promo_type": "REGULAR",
-            "period": "2020-04-01 - 2020-04-15",
+            "period": "2020-05-01 - 2020-05-15",
             "kode_barang": "88170",
             "h_member": 540000,
             "diskon": 15,
             "harga_diskon": 459000,
-            "promo_caption": "PROMO APRIL | 15% OFF"
+            "promo_caption": "PROMO MAY | 15% OFF"
         },
+
         
-
         {
             "promo_type": "REGULAR",
-            "period": "2020-04-01 - 2020-04-15",
-            "kode_barang": "88020",
-            "h_member": 428000,
-            "vc":  299091,
-            "poin": 36,
-            "promo_caption": "PROMO APRIL | FREE EXTRA WHITTENING"
+            "period": "2020-05-01 - 2020-05-15",
+            "kode_barang": "01001",
+            "h_member": 94000,
+            "diskon": 0,
+            "harga_diskon": 94000,
+            "promo_caption": ""
         },
         {
             "promo_type": "REGULAR",
-            "period": "2020-04-01 - 2020-04-15",
-            "kode_barang": "88021",
-            "h_member": 428000,
-            "vc":  299091,
-            "poin": 36,
-            "promo_caption": "PROMO APRIL | FREE EXTRA WHITTENING"
-        },
-        {
-            "promo_type": "REGULAR",
-            "period": "2020-04-01 - 2020-04-15",
-            "kode_barang": "88023",
-            "h_member": 448000,
-            "vc":  312727,
-            "poin": 38,
-            "promo_caption": "PROMO APRIL | FREE EXTRA WHITTENING"
-        },
-        {
-            "promo_type": "REGULAR",
-            "period": "2020-04-01 - 2020-04-15",
-            "kode_barang": "88024",
-            "h_member": 428000,
-            "vc":  299091,
-            "poin": 36,
-            "promo_caption": "PROMO APRIL | FREE EXTRA WHITTENING"
-        },
-        {
-            "promo_type": "REGULAR",
-            "period": "2020-04-01 - 2020-04-15",
-            "kode_barang": "88062",
-            "h_member": 428000,
-            "vc":  299091,
-            "poin": 36,
-            "promo_caption": "PROMO APRIL | FREE EXTRA WHITTENING"
-        },
-        {
-            "promo_type": "REGULAR",
-            "period": "2020-04-01 - 2020-04-15",
-            "kode_barang": "88088",
-            "h_member": 428000,
-            "vc":  299091,
-            "poin": 36,
-            "promo_caption": "PROMO APRIL | FREE EXTRA WHITTENING"
-        },
-        {
-            "promo_type": "REGULAR",
-            "period": "2020-04-01 - 2020-04-15",
-            "kode_barang": "88097",
-            "h_member": 428000,
-            "vc":  299091,
-            "poin": 36,
-            "promo_caption": "PROMO APRIL | FREE EXTRA WHITTENING"
-        },
-        {
-            "promo_type": "REGULAR",
-            "period": "2020-04-01 - 2020-04-15",
-            "kode_barang": "88130",
-            "h_member": 428000,
-            "vc":  299091,
-            "poin": 36,
-            "promo_caption": "PROMO APRIL | FREE EXTRA WHITTENING"
-        },
-        {
-            "promo_type": "REGULAR",
-            "period": "2020-04-01 - 2020-04-15",
-            "kode_barang": "88132",
-            "h_member": 428000,
-            "vc":  299091,
-            "poin": 36,
-            "promo_caption": "PROMO APRIL | FREE EXTRA WHITTENING"
-        },
-        {
-            "promo_type": "REGULAR",
-            "period": "2020-04-01 - 2020-04-15",
-            "kode_barang": "88137",
-            "h_member": 428000,
-            "vc":  299091,
-            "poin": 36,
-            "promo_caption": "PROMO APRIL | FREE EXTRA WHITTENING"
-        },
-        {
-            "promo_type": "REGULAR",
-            "period": "2020-04-01 - 2020-04-15",
-            "kode_barang": "88138",
-            "h_member": 428000,
-            "vc":  299091,
-            "poin": 36,
-            "promo_caption": "PROMO APRIL | FREE EXTRA WHITTENING"
-        },
-        {
-            "promo_type": "REGULAR",
-            "period": "2020-04-01 - 2020-04-15",
-            "kode_barang": "88169",
-            "h_member": 448000,
-            "vc":  312727,
-            "poin": 38,
-            "promo_caption": "PROMO APRIL | FREE EXTRA WHITTENING"
-        },
-
-
-
-        {
-            "promo_type": "REGULAR",
-            "period": "2020-02-16 - 2020-02-29",
-            "kode_barang": "88031",
-            "h_member": 246000,
-            "diskon": 50,
-            "harga_diskon": 123000,
-            "vc": 76000,
-            "promo_caption": "MID-MONTH PROMO! | 50% OFF"
-        },
-        {
-            "promo_type": "REGULAR",
-            "period": "2020-02-16 - 2020-02-29",
-            "kode_barang": "88030",
-            "h_member": 199000,
-            "diskon": 25,
+            "period": "2020-05-01 - 2020-05-15",
+            "kode_barang": "02004",
+            "h_member": 150000,
+            "diskon": 0,
             "harga_diskon": 150000,
-            "vc": 110000,
-            "promo_caption": "MID-MONTH PROMO! | 25% OFF"
-        },
-
-        {
-            "promo_type": "REGULAR",
-            "period": "2020-02-16 - 2020-02-29",
-            "join_date_clause": "before",
-            "join_date_range": "2020-02-16",
-            "kode_barang": "88146",
-            "h_member": 317000,
-            "diskon": 15,
-            "harga_diskon": 270000,
-            "vc": 214000,
-            "promo_caption": "SERIES PROMO | 15% OFF"
-        }, {
-            "promo_type": "REGULAR",
-            "period": "2020-02-16 - 2020-02-29",
-            "join_date_clause": "before",
-            "join_date_range": "2020-02-16",
-            "kode_barang": "88004",
-            "h_member": 317000,
-            "diskon": 15,
-            "harga_diskon": 270000,
-            "vc": 214000,
-            "promo_caption": "SERIES PROMO | 15% OFF"
-        }, {
-            "promo_type": "REGULAR",
-            "period": "2020-02-16 - 2020-02-29",
-            "join_date_clause": "before",
-            "join_date_range": "2020-02-16",
-            "kode_barang": "88153",
-            "h_member": 317000,
-            "diskon": 15,
-            "harga_diskon": 270000,
-            "vc": 214000,
-            "promo_caption": "SERIES PROMO | 15% OFF"
-        }, {
-            "promo_type": "REGULAR",
-            "period": "2020-02-16 - 2020-02-29",
-            "join_date_clause": "before",
-            "join_date_range": "2020-02-16",
-            "kode_barang": "88055",
-            "h_member": 317000,
-            "diskon": 15,
-            "harga_diskon": 270000,
-            "vc": 192000,
-            "promo_caption": "SERIES PROMO | 15% OFF"
-        }, {
-            "promo_type": "REGULAR",
-            "period": "2020-02-16 - 2020-02-29",
-            "join_date_clause": "before",
-            "join_date_range": "2020-02-16",
-            "kode_barang": "88011",
-            "h_member": 328000,
-            "diskon": 15,
-            "harga_diskon": 279000,
-            "vc": 221000,
-            "promo_caption": "SERIES PROMO | 15% OFF"
-        }, {
-            "promo_type": "REGULAR",
-            "period": "2020-02-16 - 2020-02-29",
-            "join_date_clause": "before",
-            "join_date_range": "2020-02-16",
-            "kode_barang": "88015",
-            "h_member": 328000,
-            "diskon": 15,
-            "harga_diskon": 279000,
-            "vc": 221000,
-            "promo_caption": "SERIES PROMO | 15% OFF"
-        }, {
-            "promo_type": "REGULAR",
-            "period": "2020-02-16 - 2020-02-29",
-            "join_date_clause": "before",
-            "join_date_range": "2020-02-16",
-            "kode_barang": "88054",
-            "h_member": 408000,
-            "diskon": 15,
-            "harga_diskon": 347000,
-            "vc": 223000,
-            "promo_caption": "SERIES PROMO | 15% OFF"
-        }, {
-            "promo_type": "REGULAR",
-            "period": "2020-02-16 - 2020-02-29",
-            "join_date_clause": "before",
-            "join_date_range": "2020-02-16",
-            "kode_barang": "88027",
-            "h_member": 328000,
-            "diskon": 15,
-            "harga_diskon": 279000,
-            "vc": 180000,
-            "promo_caption": "SERIES PROMO | 15% OFF"
-        }, {
-            "promo_type": "REGULAR",
-            "period": "2020-02-16 - 2020-02-29",
-            "join_date_clause": "before",
-            "join_date_range": "2020-02-16",
-            "kode_barang": "88033",
-            "h_member": 328000,
-            "diskon": 15,
-            "harga_diskon": 279000,
-            "vc": 221000,
-            "promo_caption": "SERIES PROMO | 15% OFF"
-        }, {
-            "promo_type": "REGULAR",
-            "period": "2020-02-16 - 2020-02-29",
-            "join_date_clause": "before",
-            "join_date_range": "2020-02-16",
-            "kode_barang": "88034",
-            "h_member": 328000,
-            "diskon": 15,
-            "harga_diskon": 279000,
-            "vc": 180000,
-            "promo_caption": "SERIES PROMO | 15% OFF"
-        },
-
-        {
-            "promo_type": "REGULAR",
-            "period": "2020-02-16 - 2020-02-29",
-            "join_date_clause": "between",
-            "join_date_range": "2020-02-16 - 2020-02-29",
-            "kode_barang": "88128",
-            "h_member": 317000,
-            "diskon": 25,
-            "harga_diskon": 238000,
-            "vc": 164000,
-            "promo_caption": "SERIES PROMO | 25% OFF"
+            "promo_caption": ""
         },
         {
             "promo_type": "REGULAR",
-            "period": "2020-02-16 - 2020-02-29",
-            "join_date_clause": "between",
-            "join_date_range": "2020-02-16 - 2020-02-29",
-            "kode_barang": "88089",
-            "h_member": 317000,
-            "diskon": 25,
-            "harga_diskon": 238000,
-            "vc": 164000,
-            "promo_caption": "SERIES PROMO | 25% OFF"
+            "period": "2020-05-01 - 2020-05-15",
+            "kode_barang": "07002",
+            "h_member": 320000,
+            "diskon": 0,
+            "harga_diskon": 320000,
+            "promo_caption": ""
         },
         {
             "promo_type": "REGULAR",
-            "period": "2020-02-16 - 2020-02-29",
-            "join_date_clause": "between",
-            "join_date_range": "2020-02-16 - 2020-02-29",
-            "kode_barang": "88006",
-            "h_member": 317000,
-            "diskon": 25,
-            "harga_diskon": 238000,
-            "vc": 164000,
-            "promo_caption": "SERIES PROMO | 25% OFF"
+            "period": "2020-05-01 - 2020-05-15",
+            "kode_barang": "07003",
+            "h_member": 320000,
+            "diskon": 0,
+            "harga_diskon": 320000,
+            "promo_caption": ""
         },
         {
             "promo_type": "REGULAR",
-            "period": "2020-02-16 - 2020-02-29",
-            "join_date_clause": "between",
-            "join_date_range": "2020-02-16 - 2020-02-29",
-            "kode_barang": "88121",
-            "h_member": 317000,
-            "diskon": 25,
-            "harga_diskon": 238000,
-            "vc": 158000,
-            "promo_caption": "SERIES PROMO | 25% OFF"
+            "period": "2020-05-01 - 2020-05-15",
+            "kode_barang": "08001",
+            "h_member": 119000,
+            "diskon": 0,
+            "harga_diskon": 119000,
+            "promo_caption": ""
         },
         {
             "promo_type": "REGULAR",
-            "period": "2020-02-16 - 2020-02-29",
-            "join_date_clause": "between",
-            "join_date_range": "2020-02-16 - 2020-02-29",
-            "kode_barang": "88057",
-            "h_member": 317000,
-            "diskon": 25,
-            "harga_diskon": 246000,
-            "vc": 169000,
-            "promo_caption": "SERIES PROMO | 25% OFF"
+            "period": "2020-05-01 - 2020-05-15",
+            "kode_barang": "09001",
+            "h_member": 198000,
+            "diskon": 0,
+            "harga_diskon": 198000,
+            "promo_caption": ""
         },
         {
             "promo_type": "REGULAR",
-            "period": "2020-02-16 - 2020-02-29",
-            "join_date_clause": "between",
-            "join_date_range": "2020-02-16 - 2020-02-29",
-            "kode_barang": "88008",
-            "h_member": 317000,
-            "diskon": 25,
-            "harga_diskon": 246000,
-            "vc": 169000,
-            "promo_caption": "SERIES PROMO | 25% OFF"
+            "period": "2020-05-01 - 2020-05-15",
+            "kode_barang": "10001",
+            "h_member": 290000,
+            "diskon": 0,
+            "harga_diskon": 290000,
+            "promo_caption": ""
         },
         {
             "promo_type": "REGULAR",
-            "period": "2020-02-16 - 2020-02-29",
-            "join_date_clause": "between",
-            "join_date_range": "2020-02-16 - 2020-02-29",
-            "kode_barang": "88170",
-            "h_member": 328000,
-            "diskon": 25,
-            "harga_diskon": 306000,
-            "vc": 185000,
-            "promo_caption": "SERIES PROMO | 25% OFF"
+            "period": "2020-05-01 - 2020-05-15",
+            "kode_barang": "10002",
+            "h_member": 242000,
+            "diskon": 0,
+            "harga_diskon": 242000,
+            "promo_caption": ""
         },
         {
             "promo_type": "REGULAR",
-            "period": "2020-02-16 - 2020-02-29",
-            "join_date_clause": "between",
-            "join_date_range": "2020-02-16 - 2020-02-29",
-            "kode_barang": "88044",
-            "h_member": 408000,
-            "diskon": 25,
-            "harga_diskon": 246000,
-            "vc": 140000,
-            "promo_caption": "SERIES PROMO | 25% OFF"
+            "period": "2020-05-01 - 2020-05-15",
+            "kode_barang": "10003",
+            "h_member": 242000,
+            "diskon": 0,
+            "harga_diskon": 242000,
+            "promo_caption": ""
         },
         {
             "promo_type": "REGULAR",
-            "period": "2020-02-16 - 2020-02-29",
-            "join_date_clause": "between",
-            "join_date_range": "2020-02-16 - 2020-02-29",
-            "kode_barang": "88030",
-            "h_member": 328000,
-            "diskon": 25,
-            "harga_diskon": 246000,
-            "vc": 169000,
-            "promo_caption": "SERIES PROMO | 25% OFF"
+            "period": "2020-05-01 - 2020-05-15",
+            "kode_barang": "10004",
+            "h_member": 146000,
+            "diskon": 0,
+            "harga_diskon": 146000,
+            "promo_caption": ""
         },
         {
             "promo_type": "REGULAR",
-            "period": "2020-02-16 - 2020-02-29",
-            "join_date_clause": "between",
-            "join_date_range": "2020-02-16 - 2020-02-29",
-            "kode_barang": "88031",
-            "h_member": 328000,
-            "diskon": 25,
-            "harga_diskon": 246000,
-            "vc": 149000,
-            "promo_caption": "SERIES PROMO | 25% OFF"
+            "period": "2020-05-01 - 2020-05-15",
+            "kode_barang": "11001",
+            "h_member": 275000,
+            "diskon": 0,
+            "harga_diskon": 275000,
+            "promo_caption": ""
         },
-
-
         {
-            "promo_type": "BUY-SERIES-GET-DISCOUNT",
-            "period": "2020-02-16 - 2020-02-29",
-            "kode_barang": [
-                "88001",
-                "88002",
-                "88003",
-                "88004",
-                "88005",
-                "88006",
-                "88008",
-                "88009",
-                "88055",
-                "88057",
-                "88060",
-                "88063",
-                "88065",
-                "88073",
-                "88074",
-                "88083",
-                "88085",
-                "88089",
-                "88093",
-                "88121",
-                "88122",
-                "88128",
-                "88131",
-                "88139",
-                "88140",
-                "88141",
-                "88142",
-                "88143",
-                "88144",
-                "88145",
-                "88146",
-                "88147",
-                "88148",
-                "88149",
-                "88150",
-                "88151",
-                "88152",
-                "88153",
-                "88154",
-                "88155",
-                "88156",
-                "88157",
-                "88158",
-                "88159",
-                "88160",
-                "88161"
-            ],
-            "discount_price": 35000,
-            "multiply_applies": false
+            "promo_type": "REGULAR",
+            "period": "2020-05-01 - 2020-05-15",
+            "kode_barang": "12002",
+            "h_member": 186000,
+            "diskon": 0,
+            "harga_diskon": 186000,
+            "promo_caption": ""
         },
-
-
         {
-            "promo_type": "SAF-BUY-GET-DISCOUNT",
-            "period": "2020-02-16 - 2020-02-29",
-            "kode_barang": [
-                "07002", "07004"
-            ],
-            "promoted_item": {
-                "kode_barang": "02005",
-                "nama": "SERUM ANTI FLEK",
-                "h_member": 80000,
-                "diskon": 50,
-                "harga_diskon": 40000,
-                "vc": 24000,
-                "promo_caption": "DISCOUNT GET DISCOUNT | 50% OFF",
-                "berat": 21,
-                "unit": "PIECES"
-            },
-            "multiply_applies": true,
-            "promo_caption": "SPECIAL OFFER",
-            "rule-text": "lorem ipsum dolor sit amet"
+            "promo_type": "REGULAR",
+            "period": "2020-05-01 - 2020-05-15",
+            "kode_barang": "12003",
+            "h_member": 141000,
+            "diskon": 0,
+            "harga_diskon": 141000,
+            "promo_caption": ""
+        },
+        {
+            "promo_type": "REGULAR",
+            "period": "2020-05-01 - 2020-05-15",
+            "kode_barang": "12004",
+            "h_member": 255000,
+            "diskon": 0,
+            "harga_diskon": 255000,
+            "promo_caption": ""
+        },
+        {
+            "promo_type": "REGULAR",
+            "period": "2020-05-01 - 2020-05-15",
+            "kode_barang": "14001",
+            "h_member": 180000,
+            "diskon": 0,
+            "harga_diskon": 180000,
+            "promo_caption": ""
+        },
+        {
+            "promo_type": "REGULAR",
+            "period": "2020-05-01 - 2020-05-15",
+            "kode_barang": "14002",
+            "h_member": 160000,
+            "diskon": 0,
+            "harga_diskon": 160000,
+            "promo_caption": ""
+        },
+        {
+            "promo_type": "REGULAR",
+            "period": "2020-05-01 - 2020-05-15",
+            "kode_barang": "15001",
+            "h_member": 128000,
+            "diskon": 0,
+            "harga_diskon": 128000,
+            "promo_caption": ""
+        },
+        {
+            "promo_type": "REGULAR",
+            "period": "2020-05-01 - 2020-05-15",
+            "kode_barang": "16006",
+            "h_member": 149000,
+            "diskon": 0,
+            "harga_diskon": 149000,
+            "promo_caption": ""
+        },
+        {
+            "promo_type": "REGULAR",
+            "period": "2020-05-01 - 2020-05-15",
+            "kode_barang": "19004",
+            "h_member": 140000,
+            "diskon": 0,
+            "harga_diskon": 140000,
+            "promo_caption": ""
         }
     ]
 }
